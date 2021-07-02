@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHOURABI TAHER</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
 </head>
 <body>
 
-    <nav>
+    <nav >
         <a href="#profile">Profile</a>
         <a href="#Comp">Compétance</a>
         <a href="#Formation">Formation</a>
@@ -24,20 +28,20 @@
 
         <h3>CHOURABI TAHER</h3>
         <p>
-            <a href="tel:93863732"> call me now </a><br>
+            <a href="tel:93863732"> call me now </a>
 
-            <a href="mailto:tchourabi@gmail.com"> send email now </a> <br>
+            <a href="mailto:tchourabi@gmail.com"> send email now </a> 
 
-            <a href="./cv/cv-raed.docx" download>télecharger cv</a> <br><br>
-    
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ad aliquam modi placeat inventore, omnis nam, dolorum maiores nobis perferendis iste ex sed quos, doloremque rem iusto distinctio fuga quod?
-            
+            <a href="./cv/cv-raed.docx" download>télecharger cv</a> 
+
         </p>
+
+         
     </section>
 
 
     <section id="Comp">
-        <h1>Compétance</h1>
+        <h1 class="section-title">Compétance</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga totam ipsa iusto laborum maiores quisquam maxime repellat amet, perspiciatis dolorem non rem aspernatur repellendus blanditiis fugit reprehenderit. Distinctio, magnam!</p>
         <ul>
             <li>HTML</li>
@@ -66,7 +70,7 @@
 
 
     <section id="Formation">
-        <h1>Formation</h1>
+        <h1 class="section-title">Formation</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga totam ipsa iusto laborum maiores quisquam maxime repellat amet, perspiciatis dolorem non rem aspernatur repellendus blanditiis fugit reprehenderit. Distinctio, magnam!</p>
         <ul>
             <li>HTML</li>
@@ -95,7 +99,7 @@
 
 
     <section id="Formation">
-        <h1>Parcours professionelle</h1>
+        <h1 class="section-title">Parcours professionelle</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga totam ipsa iusto laborum maiores quisquam maxime repellat amet, perspiciatis dolorem non rem aspernatur repellendus blanditiis fugit reprehenderit. Distinctio, magnam!</p>
         <ul>
             <li>HTML</li>
@@ -114,7 +118,7 @@
 
 
     <section id="Formation">
-        <h1>Plus de détails</h1>
+        <h1 class="section-title">Plus de détails</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fuga totam ipsa iusto laborum maiores quisquam maxime repellat amet, perspiciatis dolorem non rem aspernatur repellendus blanditiis fugit reprehenderit. Distinctio, magnam!</p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci iusto, dolores quis, minus nulla libero, repellat eius maiores possimus rerum voluptates fuga ad officiis laboriosam beatae enim. Labore, maxime?
@@ -124,27 +128,43 @@
     </section>
 
     <section>
-        <h1>Contact me</h1>
+        <h1 class="section-title">Contact me</h1>
 
         <hr>
 
-        <form action="">
-            <label for="">Nom prénom</label><br>
-            <input type="text"><br>
-            <label for="">Sujet</label><br>
-            <input type="text"><br>
-            <label for="">Email</label><br>
-            <input type="email"><br>
+        <div class="my-form">
+            <form action="">
+                
+                <div class="form-group">
+                    <label for="">Nom prénom</label>
+                    <input type="text">
 
-            <label for="">Message</label><br>
-            
-            <textarea name=""  rows="5" placeholder="veuillez tapez votre message ici..." ></textarea>
-            <br>
+                </div>
 
-            <button type="submit">Envoyé</button>
-            
-            
-        </form>
+                <div class="form-group">
+                    <label for="">Sujet</label>
+                    <input type="text">
+                
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="">Email</label>
+                <input type="email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="">Message</label>
+                
+                     <textarea name=""  rows="5" placeholder="veuillez tapez votre message ici..." ></textarea>
+                
+                </div>
+    
+                <button type="submit">Envoyé</button>
+                
+                
+            </form>
+        </div>
 
     </section>
     

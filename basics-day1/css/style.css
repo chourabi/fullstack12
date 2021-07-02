@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+}
+
+
+nav{
+    background-color: #00bcd4;
+    height: 33px;
+    margin-bottom: 20px;
+}
+
+nav > a{
+    text-decoration: unset;
+    color: white;
+    padding: 12px;
+}
+
+
+#profile{
+    text-align: center;
+}
+
+
+#profile > img{
+    border-radius: 50%;
+    box-shadow: 0px 14px 17px 1px #c7c7c7;
+}
+
+#profile > p > a {
+    text-decoration: unset;
+    font-size: 22px;
+    background-color: #00bcd4;
+    padding: 11px;
+    border-radius: 7px;
+    color: white;
+    margin-right: 15px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 50px;
+    color: #777777;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+section{
+    padding: 15px;
+}
+
+#Comp{
+
+}
+
+
+.my-form{
+    width: 50%;
+    margin: auto;
+}
+
+.my-form > form {
+    width: 100%;
+}
+
+
+.my-form > form > button {
+    padding: 15px;
+    background-color: #00bcd4;
+    border: 0;
+    width: 250px;
+    border-radius: 7px;
+    color: white;
+    font-size: 18px;
+}
+
+
+.form-group > input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+.form-group > textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+
+.form-group{
+    margin-bottom: 20px;
+}

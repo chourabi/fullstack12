@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+
+
+#my-first-title{
+    color: #1512b9;
+}
+
+
+.my-p{
+    color: #2196f3;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+
+.strong-p{
+    font-weight: bold;
+}
+
+
+#bg{
+    background-color: aquamarine;
+    height: 50vh;
+    padding: 40px 25px 0px 25px;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#bg > div{
+    padding: 10px;
+    border: 1px solid #ffffff5e;
+    border-radius: 15px;
+    background-color: #ffffff5e;
+}
+
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table > tbody > tr > td {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+.table > thead > tr > th {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+.x{
+    transition: background-color 1s ease-in-out;
+}
+
+.x:hover{
+   background-color: #ccc;
+}
+
+
+.square{
+    width: 50px;
+    height: 50px;
+
+    background-color: red;
+
+    transition: all 0.8s ease-in-out;
+}
+
+.square > p {
+    display: none;
+}
+
+
+.square:active{
+    width: calc( 100% - 100px );
+    height: calc( 100vh - 100px );
+    background-color: #ccc;
+}
+
+.square:hover > p {
+    display: block;
+}
