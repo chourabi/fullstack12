@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+
+
+.col-4{
+    width: 33.3333%;
+    float: left;
+}
+
+.col-8{
+    width: 66.6666%;
+    float: left;
+
+}
+
+
+.col-6{
+    width: 50%;
+    float: left;  
+}
+
+
+.col{
+    float: left;
+}
+
+
+@media screen and ( max-width:500px ) {
+    .col{
+        width: 100% !important;
+    }
+}
+
+
+
+.banner{
+    background-color: yellow;
+    height: 100px;
+    width: calc( 100% - 150px );
+    transition: height 0.5s ease-in-out;
+}
+
+
+.banner:hover{
+    height: 150px;
+}

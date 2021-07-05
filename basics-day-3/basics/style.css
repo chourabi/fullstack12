@@ -1,0 +1,108 @@
+@keyframes blocAnimation {
+    0% { width: 250px; background-color: red;  }
+    50% { width: 80%; background-color: yellow;  }
+    
+
+    100% { width: 250px; background-color: red;  }
+}
+
+.top-block{
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    background-color: red;
+
+    animation: blocAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    
+    100% { transform: rotate(360deg); }
+    
+}
+
+.square{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    background-color: chartreuse;
+
+    animation: rotate;
+    animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+}
+
+nav{
+    background-color: red;
+}
+
+
+.fixed-top-nav{
+    position: fixed;
+    top: 0;
+    
+}
+
+
+.sqr{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.sq1{
+    background-color: red;
+    position: fixed;
+}
+
+.sq2{
+    background-color: blue;
+    position: fixed;
+    left: 50px;
+}
+
+.sq3{
+    background-color: orange;
+    position: fixed;
+    left: 100px;
+}
+
+
+
+.connected-user{
+
+}
+
+
+.connected-user > .img {
+    background-image: url(https://image.flaticon.com/icons/png/512/147/147144.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+
+.connected-user >.img > .status {
+    background-color: grey;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-color: white;
+    border: 6px solid white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.connected{
+    background-color: #8bc34a !important;
+}
+
