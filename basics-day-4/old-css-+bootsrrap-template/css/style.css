@@ -1,0 +1,21 @@
+.my-custom-color{
+    background-color: cornflowerblue !important;
+}
+
+
+.color-icon{
+    color: yellow;
+    font-size: 25px;
+}
+
+.my-menu > li > a{
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+
+}
+
+.my-menu{
+    list-style: none;
+    padding: 0;
+}
