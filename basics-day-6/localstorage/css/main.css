@@ -1,0 +1,30 @@
+.toggle-btn{
+    height: 27px;
+    width: 71px;
+    background-color: #cacaca;
+    border-radius: 32px;
+    position: relative;
+
+}
+
+
+.toggle-btn.active > div{
+    background-color: green;
+    right: 0;
+}
+
+.toggle-btn.not-active > div{
+    background-color: orange;
+    left: 0;
+}
+
+
+.toggle-btn > div{
+    
+    height: 100%;
+    width: 28px;
+    border-radius: 30px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    
+}

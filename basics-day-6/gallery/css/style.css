@@ -1,0 +1,25 @@
+.gallery{
+    width: 100%;
+    position: relative;
+    transition: filter 1s ease-in-out;
+}
+
+.gallery > img {
+    width: 100%;
+}
+
+.gallery > .btn-nav{
+    position: absolute;
+    top: 50%;
+    background-color: #ffffffa3;
+    padding: 27px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.next{
+    right: 0;
+}
