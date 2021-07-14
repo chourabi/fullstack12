@@ -1,0 +1,10 @@
+.magic{
+    transition: all 1s ease-in-out;
+}
+.active{
+    background-color: red;
+}
+
+.not-active{
+    background-color: green;
+}

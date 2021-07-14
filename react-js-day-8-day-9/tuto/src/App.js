@@ -6,6 +6,9 @@ import ContactClass from './comps/ContactClass';
 import React from 'react';
 import NavBarBloc from './comps/NavBarBloc';
 import ArticlesBloc from './comps/ArticlesBloc';
+import ToggleButton from './comps/ToggleButton';
+import ParentComp from './comps/Parent';
+import ContactList from './comps/ContactList';
 
 
 class App extends React.Component {
@@ -42,14 +45,20 @@ class App extends React.Component {
          }
 
 
-        <NavBarBloc menu = { this.state.menu } />
+        {
+          /**
+           * <NavBarBloc menu = { this.state.menu } />
 
 
          <div>
            <ArticlesBloc />
          </div>
+           */
+        }
 
 
+
+        <ContactList />
         
       </div>
     );
