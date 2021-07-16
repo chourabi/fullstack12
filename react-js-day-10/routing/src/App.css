@@ -1,0 +1,19 @@
+.movie-title{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 15;
+    opacity: 0;
+}
+
+.movie:hover > img{
+    filter: brightness(0.5);
+}
+
+.movie:hover > .movie-title{
+    opacity: 1;
+}
