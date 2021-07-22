@@ -1,22 +1,21 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 class AuthPage extends React.Component {
+
+
     constructor(props) {
         super(props);
         this.state={
-            username:'',
-            password:''
+            username:'admin',
+            password:'admin'
         }
+
+        this.connect = this.connect.bind(this);
     }
 
 
     connect(){
-        if ( this.state.username === 'admin' && this.state.password === 'admin' ) {
-           //this.props.history.push('/home')
-            localStorage.setItem('access',new Date().getTime());
-           window.location = "/home";
-        }else{
-            alert("wrong username or password")
-        }
+        
     }
 
 
@@ -24,12 +23,20 @@ class AuthPage extends React.Component {
         return(
             <div>
             <label>Username</label>
-            <input onChange={ (e)=>{ this.setState({username:e.target.value}) } } type="text" />
+            <input value={this.state.username} onChange={ (e)=>{ this.setState({username:e.target.value}) } } type="text" />
             <label>password</label>
-            <input onChange={ (e)=>{ this.setState({password:e.target.value}) } } type="password" />
+            <input value={this.state.password} onChange={ (e)=>{ this.setState({password:e.target.value}) } } type="password" />
 
             <button onClick={ ()=>{
-                this.connect();
+                if ( this.state.username === 'admin' && this.state.password === 'admin' ) {
+                    localStorage.setItem('access',new Date().getTime());
+
+                    
+                    this.props.history.push('/home')
+                 
+               }else{
+                   alert("wrong username or password")
+               }
             } }>Connect</button>
 
         </div>
@@ -38,4 +45,4 @@ class AuthPage extends React.Component {
 }
 
 
-export default AuthPage ;
+export default withRouter (AuthPage) ;

@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import NavBar from './pages/Comps/navbar';
 import MoviesHome from './moviesPages/MoviesHome';
+import MovieDetails from './moviesPages/MovieDetails';
 
 
  
@@ -23,7 +24,11 @@ function App() {
 
 
         <Switch> 
-           <Route path="" component={MoviesHome} />
+
+
+        <Route path="/" component={MoviesHome} exact />
+        <Route path="/movie/:id" component={MovieDetails} exact />
+           
           
           
 
