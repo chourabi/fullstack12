@@ -27,3 +27,8 @@ var cors = require('cors')
 app.use(cors())
 
 :D 
+
+
+// install JWT
+
+npm i jsonwebtoken
