@@ -1,5 +1,6 @@
  
 import React from 'react';
+import FeedBloc from '../componenet/FeedBloc';
 
 class Home extends React.Component{
   constructor(props){
@@ -43,16 +44,13 @@ class Home extends React.Component{
     return(
       <div className="container mt-5">
           
-          <ul>
+          <div>
             {
               this.state.feeds.map((f)=>{
-                return( 
-                <li>
-                  { f.content }
-                </li> );
+                return( <FeedBloc content = {f} /> );
               })
             }
-          </ul>
+          </div>
           
            
       </div>

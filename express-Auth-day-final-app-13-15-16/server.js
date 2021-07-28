@@ -4,8 +4,8 @@ const port = 8000
 var jwt = require('jsonwebtoken');
 
 var cors = require('cors');
-const { createAccount, authenticateAccount } = require('./my-modules/auth');
-const { createNewFeed, updateFeed, getAllFeeds } = require('./my-modules/feeds');
+const { createAccount, authenticateAccount, getPersonalInformation } = require('./my-modules/auth');
+const { createNewFeed, updateFeed, getAllFeeds, getFeedsLikes, addLikeToFeed, deleteFeed } = require('./my-modules/feeds');
 
 
 app.use(cors());
@@ -65,6 +65,23 @@ app.post('/api/feed/update',(req,res)=>{
 app.get('/api/feed/list',(req,res)=>{
     getAllFeeds(req,res);
 });
+
+app.get('/api/feed/delete',(req,res)=>{
+     deleteFeed(req,res);
+});
+
+app.get('/api/feed/likes',(req,res)=>{
+    getFeedsLikes(req,res);
+});
+
+app.get('/api/feed/likes/add',(req,res)=>{
+    addLikeToFeed(req,res);
+});
+
+app.get('/api/user/data',(req,res)=>{
+    getPersonalInformation(req,res);
+})
+
 
 
 

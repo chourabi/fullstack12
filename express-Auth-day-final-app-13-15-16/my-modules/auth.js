@@ -93,3 +93,38 @@ exports.authenticateAccount = function(req,res){
         
     })
 }
+
+
+exports.getPersonalInformation = function(req,res){
+
+    MongoClient.connect(urlMongo,function(err,db){
+    var eshop = db.db('eshop');
+ 
+ 
+        const token = req.headers.authorization;
+ 
+        try {
+
+            var decoded = jwt.verify(token, 'taherchourabi');
+            console.log(decoded) // bar
+            eshop.collection('users').findOne({token:token},function(err,user){
+                let userData = user;
+                delete userData.token;
+                delete userData.password;
+                
+                res.send({user:userData})
+               
+            })
+
+            //
+             
+        } catch (error) {
+            res.send({ success: false, message: "session expired ! !!!!" })
+        }
+         
+        
+    });
+
+        
+ 
+}
